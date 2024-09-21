@@ -54,21 +54,6 @@
 	</issueManagement>
 
 	-->
-        <distributionManagement>
-
-             <repository>
-              <id>nexus</id>
-              <name>Voya Releases Nexus Repository</name>
-              <url>http://172.31.41.97:8081/voya/repository/voya-release/</url>
-             </repository>
-
-            <snapshotRepository>
-              <id>nexus</id>
-              <name>Voya Snapshot Nexus Repository </name>
-              <url>http://172.31.41.97:8081/voya/repository/voya-snapshot/</url>
-      </snapshotRepository>
-
-       </distributionManagement>
 
 	<build>
 	  <plugins>
@@ -88,6 +73,23 @@
 	      </configuration>
 	    </plugin>
 	  </plugins>
-	</build>
+  </build>
+
+          <distributionManagement>
+
+             <repository>
+              <id>nexus</id>
+              <name>Voya Releases Nexus Repository</name>
+              <url>http://172.31.41.97:8081/voya/repository/voya-release/</url>
+             </repository>
+
+            <snapshotRepository>
+              <id>nexus</id>
+              <name>Voya Snapshot Nexus Repository </name>
+              <url>http://172.31.41.97:8081/voya/repository/voya-snapshot/</url>
+      </snapshotRepository>
+
+       </distributionManagement>
+
 	
 </project>
