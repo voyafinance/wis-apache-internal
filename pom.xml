@@ -37,6 +37,23 @@
 
 	</dependencies>
 
+        <distributionManagement>
+
+             <repository>
+              <id>nexus</id>
+              <name>Voya Releases Nexus Repository</name>
+              <url>http://172.31.41.97:8081/voya/repository/voya-release/</url>
+             </repository>
+
+            <snapshotRepository>
+              <id>nexus</id>
+              <name>Voya Snapshot Nexus Repository </name>
+              <url>http://172.31.41.97:8081/voya/repository/voya-snapshot/</url>
+      </snapshotRepository>
+
+       </distributionManagement>
+
+
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
 		mvn scm:update -->
@@ -74,22 +91,6 @@
 	    </plugin>
 	  </plugins>
   </build>
-
-          <distributionManagement>
-
-             <repository>
-              <id>nexus</id>
-              <name>Voya Releases Nexus Repository</name>
-              <url>http://172.31.41.97:8081/voya/repository/voya-release/</url>
-             </repository>
-
-            <snapshotRepository>
-              <id>nexus</id>
-              <name>Voya Snapshot Nexus Repository </name>
-              <url>http://172.31.41.97:8081/voya/repository/voya-snapshot/</url>
-      </snapshotRepository>
-
-       </distributionManagement>
 
 	
 </project>
