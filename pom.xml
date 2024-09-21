@@ -66,8 +66,10 @@
               <id>nexus</id>
               <name>Voya Snapshot Nexus Repository </name>
               <url>http://172.31.41.97:8081/voya/repository/voya-snapshot/</url>
-       </snapshotRepository>
+      </snapshotRepository>
+
        </distributionManagement>
+
 	<build>
 	  <plugins>
 	    <plugin>
